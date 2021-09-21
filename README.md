@@ -1,2 +1,3 @@
-# matriarcat
-Its ecofriendly desktop application about sorting waste
+## Ціль:
+<br /> Застосунок, який містить інформацію про розділення відходів на різні групи для переробки
+## Команда
