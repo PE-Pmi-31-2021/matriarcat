@@ -1,0 +1,40 @@
+BEGIN;
+
+CREATE TABLE "Waste"
+(
+    "Waste_ID" serial,
+    "Waste_Name" character varying,
+    "Waste_Photo" bytea,
+    "Waste_Info" text,
+    PRIMARY KEY ("Waste_ID")
+);
+
+CREATE TABLE public."Label"
+(
+    "Label_ID" serial,
+    "Waste_ID" serial,
+    "Label_Name" character varying,
+    "Label_Photo" bytea,
+    "Label_Info" text,
+    PRIMARY KEY ("Label_ID"),
+	CONSTRAINT fk_waste
+      FOREIGN KEY("Waste_ID") 
+	  REFERENCES "Waste"("Waste_ID")
+	  ON DELETE CASCADE
+);
+
+CREATE TABLE public."Location"
+(
+    "Location_ID" serial,
+    "Label_ID" integer,
+    "Town" character varying,
+    "District" character varying,
+    "Address" character varying,
+    PRIMARY KEY ("Location_ID"),
+	CONSTRAINT fk_label
+      FOREIGN KEY("Label_ID") 
+	  REFERENCES "Label"("Label_ID")
+	  ON DELETE CASCADE
+);
+
+END;
