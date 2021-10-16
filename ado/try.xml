@@ -1,0 +1,267 @@
+<?xml version="1.0" standalone="yes"?>
+<Waste>
+  <waste>
+    <waste_id>1</waste_id>
+    <waste_name>Коробка</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMS5qcGc=</waste_photo>
+    <waste_info>Знімайте наліпки і скотч;Складайте паковання, щоб вони займали менше місця</waste_info>
+  </waste>
+  <waste>
+    <waste_id>2</waste_id>
+    <waste_name>Картон</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMi5qcGc=</waste_photo>
+    <waste_info>Листівки, упаковки від чаю, цукерок, косметики, побутової хімії;Знімайте наліпки і скотч;Складайте паковання, щоб вони займали менше місця.</waste_info>
+  </waste>
+  <waste>
+    <waste_id>3</waste_id>
+    <waste_name>Газета</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMy5qcGc=</waste_photo>
+    <waste_info>Знімайте наліпки і пластикову обгортку;Складайте паковання, щоб вони займали менше місця.</waste_info>
+  </waste>
+  <waste>
+    <waste_id>4</waste_id>
+    <waste_name>Журнал</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vNC5qcGc=</waste_photo>
+    <waste_info>Знімайте наліпки і пластикову обгортку;Складайте паковання, щоб вони займали менше місця.</waste_info>
+  </waste>
+  <waste>
+    <waste_id>5</waste_id>
+    <waste_name>Бумага</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vNS5qcGc=</waste_photo>
+    <waste_info>Офісна бумага</waste_info>
+  </waste>
+  <waste>
+    <waste_id>6</waste_id>
+    <waste_name>Консервна банка</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vNi5qcGc=</waste_photo>
+    <waste_info>Щоб відрізнити сталь від алюмінію, перевіряйте їх магнітом. Сталь магнітиться, алюміній — ні.</waste_info>
+  </waste>
+  <waste>
+    <waste_id>7</waste_id>
+    <waste_name>Банка з-під фарби</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vNy5qcGc=</waste_photo>
+    <waste_info>Щоб відрізнити сталь від алюмінію, перевіряйте їх магнітом. Сталь магнітиться, алюміній — ні.</waste_info>
+  </waste>
+  <waste>
+    <waste_id>8</waste_id>
+    <waste_name>Фольга</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vOC5qcGc=</waste_photo>
+    <waste_info />
+  </waste>
+  <waste>
+    <waste_id>9</waste_id>
+    <waste_name>Металева банка з-під напоїв</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vOS5qcGc=</waste_photo>
+    <waste_info>Складайте паковання, щоб вони займали менше місця</waste_info>
+  </waste>
+  <waste>
+    <waste_id>10</waste_id>
+    <waste_name>Паковання з-під соків</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMTAuanBn</waste_photo>
+    <waste_info>Виливайте залишки напою;Складайте паковання, щоб вони займали менше місця</waste_info>
+  </waste>
+  <waste>
+    <waste_id>11</waste_id>
+    <waste_name>Пляшка з-під напоїв</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMTEuanBn</waste_photo>
+    <waste_info>Знімайте кришечки з пляшки;Стискайте пляшки, щоб вони займали менше місця</waste_info>
+  </waste>
+  <waste>
+    <waste_id>12</waste_id>
+    <waste_name>Пляшка з-під олії</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMTIuanBn</waste_photo>
+    <waste_info>Знімайте кришечки з пляшки;Стискайте пляшки, щоб вони займали менше місця</waste_info>
+  </waste>
+  <waste>
+    <waste_id>13</waste_id>
+    <waste_name>Каністра</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMTMuanBn</waste_photo>
+    <waste_info />
+  </waste>
+  <waste>
+    <waste_id>14</waste_id>
+    <waste_name>Кришечка з-під пляшки для напоїв</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMTQuanBn</waste_photo>
+    <waste_info />
+  </waste>
+  <waste>
+    <waste_id>15</waste_id>
+    <waste_name>Пляшки з-під засобів побутової хімії</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMTUuanBn</waste_photo>
+    <waste_info>Знімайте етикетки та наліпки з пляшки;Стискайте пляшки, щоб вони займали менше місця</waste_info>
+  </waste>
+  <waste>
+    <waste_id>16</waste_id>
+    <waste_name>Флакон з-під шампуню</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMTYuanBn</waste_photo>
+    <waste_info>Знімайте етикетки та наліпки з пляшки;Стискайте пляшки, щоб вони займали менше місця</waste_info>
+  </waste>
+  <waste>
+    <waste_id>17</waste_id>
+    <waste_name>Упаковка з-під таблеток</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMTcuanBn</waste_photo>
+    <waste_info />
+  </waste>
+  <waste>
+    <waste_id>18</waste_id>
+    <waste_name>Блістер</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMTguanBn</waste_photo>
+    <waste_info />
+  </waste>
+  <waste>
+    <waste_id>19</waste_id>
+    <waste_name>Клейонка</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMTkuanBn</waste_photo>
+    <waste_info />
+  </waste>
+  <waste>
+    <waste_id>20</waste_id>
+    <waste_name>Пластикове вікно</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMjAuanBn</waste_photo>
+    <waste_info />
+  </waste>
+  <waste>
+    <waste_id>21</waste_id>
+    <waste_name>Натяжні стелі</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMjEuanBn</waste_photo>
+    <waste_info />
+  </waste>
+  <waste>
+    <waste_id>22</waste_id>
+    <waste_name>Кульочок</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMjIuanBn</waste_photo>
+    <waste_info>Знімайте етикетки, наліпки та будь-які інші деталі</waste_info>
+  </waste>
+  <waste>
+    <waste_id>23</waste_id>
+    <waste_name>Пухирчата плівка</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMjMuanBn</waste_photo>
+    <waste_info>Знімайте етикетки, наліпки та будь-які інші деталі</waste_info>
+  </waste>
+  <waste>
+    <waste_id>24</waste_id>
+    <waste_name>Плівка</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMjQuanBn</waste_photo>
+    <waste_info>Комерційна плівка (паковання з-під засобів особистої гігієни: туалетного паперу, памперсів тощо);Знімайте етикетки, наліпки та будь-які інші деталі</waste_info>
+  </waste>
+  <waste>
+    <waste_id>25</waste_id>
+    <waste_name>Пакет з-під молочних продуктів</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMjUuanBn</waste_photo>
+    <waste_info>Пакети, що всередині чорні</waste_info>
+  </waste>
+  <waste>
+    <waste_id>26</waste_id>
+    <waste_name>Пакет з-під поштових відправлень</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMjYuanBn</waste_photo>
+    <waste_info>Пакети, що всередині чорні</waste_info>
+  </waste>
+  <waste>
+    <waste_id>27</waste_id>
+    <waste_name>Відро</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMjcuanBn</waste_photo>
+    <waste_info />
+  </waste>
+  <waste>
+    <waste_id>28</waste_id>
+    <waste_name>Контейнер для їжі</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMjguanBn</waste_photo>
+    <waste_info />
+  </waste>
+  <waste>
+    <waste_id>29</waste_id>
+    <waste_name>Іграшка</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMjkuanBn</waste_photo>
+    <waste_info />
+  </waste>
+  <waste>
+    <waste_id>30</waste_id>
+    <waste_name>Стаканчик з-під йогурту</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMzAuanBn</waste_photo>
+    <waste_info>Знімайте етикетки, наліпки та будь-які інші деталі</waste_info>
+  </waste>
+  <waste>
+    <waste_id>31</waste_id>
+    <waste_name>Шуршава плівка</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMzEuanBn</waste_photo>
+    <waste_info>Знімайте етикетки, наліпки та будь-які інші деталі</waste_info>
+  </waste>
+  <waste>
+    <waste_id>32</waste_id>
+    <waste_name>Пінопласт</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMzIuanBn</waste_photo>
+    <waste_info />
+  </waste>
+  <waste>
+    <waste_id>33</waste_id>
+    <waste_name>Одноразовий посуд</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMzMuanBn</waste_photo>
+    <waste_info />
+  </waste>
+  <waste>
+    <waste_id>34</waste_id>
+    <waste_name>Бутль з-під води</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMzQuanBn</waste_photo>
+    <waste_info />
+  </waste>
+  <waste>
+    <waste_id>35</waste_id>
+    <waste_name>CD</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMzUuanBn</waste_photo>
+    <waste_info />
+  </waste>
+  <waste>
+    <waste_id>36</waste_id>
+    <waste_name>Дозатор</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMzYuanBn</waste_photo>
+    <waste_info />
+  </waste>
+  <waste>
+    <waste_id>37</waste_id>
+    <waste_name>Одноразовий посуд</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMzcuanBn</waste_photo>
+    <waste_info />
+  </waste>
+  <waste>
+    <waste_id>38</waste_id>
+    <waste_name>Туба з-під зубної пасти</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMzguanBn</waste_photo>
+    <waste_info />
+  </waste>
+  <waste>
+    <waste_id>39</waste_id>
+    <waste_name>Скло</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vMzkuanBn</waste_photo>
+    <waste_info>Кольорове та прозоре скло;Знімайте кришечки з усього скла</waste_info>
+  </waste>
+  <waste>
+    <waste_id>40</waste_id>
+    <waste_name>Фрукти</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vNDAuanBn</waste_photo>
+    <waste_info />
+  </waste>
+  <waste>
+    <waste_id>41</waste_id>
+    <waste_name>Овочі</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vNDEuanBn</waste_photo>
+    <waste_info />
+  </waste>
+  <waste>
+    <waste_id>42</waste_id>
+    <waste_name>Чайна заварка</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vNDIuanBn</waste_photo>
+    <waste_info />
+  </waste>
+  <waste>
+    <waste_id>43</waste_id>
+    <waste_name>Кавова гуща</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vNDMuanBn</waste_photo>
+    <waste_info />
+  </waste>
+  <waste>
+    <waste_id>44</waste_id>
+    <waste_name>Паперові серветки</waste_name>
+    <waste_photo>QzovL1VzZXJzLy9BZG1pbi8vT25lRHJpdmUvL9Cg0L7QsdC+0YfQuNC5INGB0YLRltC7CnNzLy9XYXN0ZS8vNDQuanBn</waste_photo>
+    <waste_info>Тільки білі, без малюнків, тілесних рідин</waste_info>
+  </waste>
+</Waste>
