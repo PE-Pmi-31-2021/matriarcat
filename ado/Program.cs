@@ -55,12 +55,10 @@ namespace ConsoleApp1
                 adapter.Fill(ds);
                 foreach (DataTable dt in ds.Tables)
                 {
-                    Console.WriteLine(dt.TableName); // название таблицы
-                                                     // перебор всех столбцов
+                    Console.WriteLine(dt.TableName); 
                     foreach (DataColumn column in dt.Columns)
                         Console.Write("\t{0}", column.ColumnName);
                     Console.WriteLine();
-                    // перебор всех строк таблицы
                     foreach (DataRow row in dt.Rows)
                     {
                         // получаем все ячейки строки
