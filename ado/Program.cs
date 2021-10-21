@@ -9,25 +9,9 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-           string nea = "Waste";
-            XDocument xdoci = XDocument.Load(@"try.xml");
-            var read1 = from rr in xdoci.Descendants("Waste")
-                        from r in rr.Descendants("waste")
-                        select new
-                        {
-                            waste_id = r.Descendants("waste_id").First().Value,
-                            waste_name = r.Descendants("waste_name").First().Value,
-                            waste_photo = r.Descendants("waste_photo").First().Value,
-                            waste_info = r.Descendants("waste_info").First().Value
-                        };
-            foreach(var i in read1)
-            {
-                XMLRead(nea, i.waste_name, Byte.Parse(i.waste_photo), i.waste_info);
-            }
-            
-            // XMLRead(nea);
+           string waste = "Waste";
             //XMLWriter(nea);
-            // ShowTable(nea);
+            ShowTable(waste);
             //InsertRecord();
             // TestConnection();
             Console.ReadKey();
@@ -61,7 +45,6 @@ namespace ConsoleApp1
                     Console.WriteLine();
                     foreach (DataRow row in dt.Rows)
                     {
-                        // получаем все ячейки строки
                         var cells = row.ItemArray;
                         foreach (object cell in cells)
                             Console.Write("\t{0}", cell);
@@ -87,23 +70,7 @@ namespace ConsoleApp1
                 Console.WriteLine("done");
             }
         }
-        private static void XMLRead(string table,string f,byte s,string t)
-        {
-
-            using (NpgsqlConnection con = GetConnection())
-            {
-                string command = @"insert into " + $"{table}(waste_name,waste_photo,waste_info) values({f},{s},{t})";
-                NpgsqlCommand npc = new NpgsqlCommand(command, con);
-                con.Open();
-
-                int n = npc.ExecuteNonQuery();
-                if (n == 1)
-                {
-                    Console.WriteLine("done!!");
-                }
-
-            }
-        }
+       
         private static void ShowTable(string table)
         {
             using(NpgsqlConnection con = GetConnection())
