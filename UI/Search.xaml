@@ -1,0 +1,26 @@
+<Window x:Class="RSS_Графічний_дизайн_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RSS_Графічний_дизайн_"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="900" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black"/>
+            <GradientStop Color="#FF2CFF23" Offset="1"/>
+            <GradientStop Color="#FF29EF20" Offset="0.968"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid Background="#FF74C548" Margin="2,0,-1.667,0.333">
+
+        <Button Content="Алфавітний покажчик" HorizontalAlignment="Left" VerticalAlignment="Top" Width="204" Height="73" Margin="189,0,0,0" Background="#FFDCEDC8" BorderBrush="#FFDCEDC8" FontSize="14" Foreground="#FF306E1D" FontWeight="Bold"/>
+        <Button Content="Пошук продукту" HorizontalAlignment="Left" VerticalAlignment="Top" Width="189" Height="73" Background="#FFDCEDC8" Click="Button_Click" FontSize="14" BorderBrush="#FFDCEDC8" Foreground="#FF306E1D" FontWeight="Bold"/>
+        <Button Content="Маркування" HorizontalAlignment="Left" VerticalAlignment="Top" Width="212" Height="73" Margin="393,0,0,0" Background="#FFDCEDC8" BorderBrush="#FFDCEDC8" FontSize="14" Foreground="#FF306E1D" FontWeight="Bold"/>
+        <Button Content="Пункти здачі та переробки матеріалів" HorizontalAlignment="Left" VerticalAlignment="Top" Width="288" Height="73" Margin="605,0,0,0" Background="#FFDCEDC8" BorderBrush="#FFDCEDC8" FontSize="14" Click="Button_Click_1" Foreground="#FF306E1D" FontWeight="Bold"/>
+        <TextBox x:Name="tbSearch" Height="53" Margin="230,234,0,0" TextWrapping="Wrap" Text="  Search" Width="459" UndoLimit="1000" RenderTransformOrigin="0.5,0.5" FontSize="26" TextChanged="tbSearch_TextChanged" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="Silver" SelectionBrush="Black" AutoWordSelection="True" HorizontalScrollBarVisibility="Disabled" Padding="0,4,8,0" Background="#FF74C548" BorderBrush="{x:Null}"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="53" Margin="230,234,0,0" VerticalAlignment="Top" Width="459" CornerRadius="25" Background="White"/>
+
+    </Grid>
+</Window>
