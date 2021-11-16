@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WPF
+namespace TESTWPF
 {
     /// <summary>
     /// Interaction logic for Waste.xaml
@@ -23,10 +23,21 @@ namespace WPF
         public Waste()
         {
             InitializeComponent();
-            projectEntities1 db = new projectEntities1();
+            projectEntities db = new projectEntities();
             var wast = from w in db.wastes
                        select w;
-            this.WasteGrid.ItemsSource = db.labels.ToList();
+
+            List<string> titles = new List<string>();
+            foreach (var item in wast)
+            {
+                titles.Add(item.Waste_Name);
+            }
+            titles.Sort();
+            
+            DataContext = titles.Select(n => n[0]).Distinct()
+                    .ToDictionary(l => l.ToString(), l => titles.Where(w => w.StartsWith(l.ToString())));
         }
     }
+    
+   
 }
