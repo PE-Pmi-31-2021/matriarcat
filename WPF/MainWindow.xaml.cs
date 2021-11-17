@@ -1,20 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
-
-namespace WPF
+namespace TESTWPF
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -24,13 +10,15 @@ namespace WPF
         public MainWindow()
         {
             InitializeComponent();
-            
+
+        }
+        private void BtnClickP0(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Search();
         }
         private void BtnClickP1(object sender, RoutedEventArgs e)
         {
             Main.Content = new Waste();
-            
-            
         }
         private void BtnClickP2(object sender, RoutedEventArgs e)
         {
