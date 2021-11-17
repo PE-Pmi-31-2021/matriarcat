@@ -1,19 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.IO;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.ComponentModel;
 
 namespace TESTWPF
 {
@@ -22,41 +13,69 @@ namespace TESTWPF
     /// </summary>
     public partial class Label : Page
     {
+        static projectEntities db = new projectEntities();
         public Label()
         {
             InitializeComponent();
-            projectEntities db = new projectEntities();
-            var wast = from w in db.labels
-                       select w;
 
-            List<string> labels = new List<string>();
-            foreach (var item in wast)
-            {
-
-                labels.Add(item.Label_Name);
-
-            }
-
+            List<string> labels = Label_List().Values.ToList();
+            
             this.LabelBox.ItemsSource = new LabelData[]
             {
-            new LabelData{Title=labels[0], ImageData = LoadImage(@"\1.png")},
-            new LabelData{Title=labels[1], ImageData = LoadImage(@"\2.png")},
-            new LabelData{Title=labels[2], ImageData = LoadImage(@"\3.png")},
-            new LabelData{Title=labels[3], ImageData = LoadImage(@"\4.png")},
-            new LabelData{Title=labels[4], ImageData = LoadImage(@"\5.png")},
-            new LabelData{Title=labels[5], ImageData = LoadImage(@"\6.png")},
-            new LabelData{Title=labels[6], ImageData = LoadImage(@"\7.png")},
-            new LabelData{Title=labels[7], ImageData = LoadImage(@"\8.png")},
-            new LabelData{Title=labels[8], ImageData = LoadImage(@"\17.png")},
-            new LabelData{Title=labels[9], ImageData = LoadImage(@"\9.png")},
-            new LabelData{Title=labels[10], ImageData = LoadImage(@"\10.png")},
-            new LabelData{Title=labels[11], ImageData = LoadImage(@"\11.png")},
-            new LabelData{Title=labels[12], ImageData = LoadImage(@"\12.png")},
-            new LabelData{Title=labels[13], ImageData = LoadImage(@"\13.png")},
-            new LabelData{Title=labels[14], ImageData = LoadImage(@"\14.png")},
-            new LabelData{Title=labels[15], ImageData = LoadImage(@"\15.png")},
-            new LabelData{Title=labels[16], ImageData = LoadImage(@"\16.png")}
+            new LabelData{Title=labels[0], ImageData = LoadImage(@"D:\3 КУРС\ПІ\Label\1.png")},
+            new LabelData{Title=labels[1], ImageData = LoadImage(@"D:\3 КУРС\ПІ\Label\2.png")},
+            new LabelData{Title=labels[2], ImageData = LoadImage(@"D:\3 КУРС\ПІ\Label\3.png")},
+            new LabelData{Title=labels[3], ImageData = LoadImage(@"D:\3 КУРС\ПІ\Label\4.png")},
+            new LabelData{Title=labels[4], ImageData = LoadImage(@"D:\3 КУРС\ПІ\Label\5.png")},
+            new LabelData{Title=labels[5], ImageData = LoadImage(@"D:\3 КУРС\ПІ\Label\6.png")},
+            new LabelData{Title=labels[6], ImageData = LoadImage(@"D:\3 КУРС\ПІ\Label\7.png")},
+            new LabelData{Title=labels[7], ImageData = LoadImage(@"D:\3 КУРС\ПІ\Label\8.png")},
+            new LabelData{Title=labels[8], ImageData = LoadImage(@"D:\3 КУРС\ПІ\Label\17.png")},
+            new LabelData{Title=labels[9], ImageData = LoadImage(@"D:\3 КУРС\ПІ\Label\9.png")},
+            new LabelData{Title=labels[10], ImageData = LoadImage(@"D:\3 КУРС\ПІ\Label\10.png")},
+            new LabelData{Title=labels[11], ImageData = LoadImage(@"D:\3 КУРС\ПІ\Label\11.png")},
+            new LabelData{Title=labels[12], ImageData = LoadImage(@"D:\3 КУРС\ПІ\Label\12.png")},
+            new LabelData{Title=labels[13], ImageData = LoadImage(@"D:\3 КУРС\ПІ\Label\13.png")},
+            new LabelData{Title=labels[14], ImageData = LoadImage(@"D:\3 КУРС\ПІ\Label\14.png")},
+            new LabelData{Title=labels[15], ImageData = LoadImage(@"D:\3 КУРС\ПІ\Label\15.png")},
+            new LabelData{Title=labels[16], ImageData = LoadImage(@"D:\3 КУРС\ПІ\Label\16.png")}
             };
+        }
+
+        static Dictionary<int, string> Label_List()
+        {
+            var wast = from w in db.labels
+                       select w;
+            Dictionary<int, string> lbl = new Dictionary<int, string>();
+            foreach (var item in wast)
+            {
+                lbl.Add(item.Label_ID, item.Label_Name);
+            }
+
+            return lbl;
+        }
+        private void OnClick(object sender, RoutedEventArgs e)
+        {
+            var keyword = (e.Source as Button).Content.ToString();
+
+            IDictionary<int, string> lbl = Label_List();
+            var wast = from w in db.wastes
+                       select w;
+
+            var ws_lb = from rs in wast.ToList()
+                        join r in lbl on rs.Label_ID equals r.Key
+                        select new { Name = rs.Waste_Name, Value = r.Value };
+
+            StringBuilder builder = new StringBuilder();
+            foreach (var w in ws_lb)
+            {
+                if (keyword == w.Value)
+                {
+                    builder.AppendLine(w.Name);
+                }
+            }
+            MessageBox.Show(builder.ToString());
+
         }
         private BitmapImage LoadImage(string filename)
         {
