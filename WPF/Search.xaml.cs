@@ -1,18 +1,6 @@
-﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-
 namespace TESTWPF
 {
     /// <summary>
@@ -20,20 +8,35 @@ namespace TESTWPF
     /// </summary>
     public partial class Search : Page
     {
+        public class Descriptions
+        {
+            public string Name { get; set; }
+            public string Desc1 { get; set; }
+            public string Desc2 { get; set; }
+        }
+
+        public List<Descriptions> DescriptionsCollection { get; set; }
         public Search()
         {
             InitializeComponent();
-
             projectEntities db = new projectEntities();
-            var wastes = from l in db.wastes
+            var wst = from l in db.wastes
                          select l;
+            var lbl = from l in db.labels
+                      select l;
 
-            wastes.OrderBy(w => w.Waste_Name);
-            foreach (var item in wastes)
+            DescriptionsCollection = new List<Descriptions>();
+
+            var dcollection = from rs in wst
+                         join r in lbl on rs.Label_ID equals r.Label_ID
+                         select new { Name = rs.Waste_Name, D1 = r.Label_Name, D2 = rs.Waste_Info };
+            foreach (var item in dcollection)
             {
-                SearchBox.Items.Add(item.Waste_Name);
+                DescriptionsCollection.Add(new Descriptions { Name = item.Name, Desc1 = item.D1, Desc2 = item.D2.Replace(';', '\n') });
             }
-            
+
+            DataContext = this;
+
         }
         private void cbTest_TextChanged(object sender, TextChangedEventArgs e)
         {
