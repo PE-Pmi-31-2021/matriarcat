@@ -1,4 +1,4 @@
-﻿<Page x:Class="TESTWPF.Search"
+<Page x:Class="TESTWPF.Search"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -9,8 +9,14 @@
       Title="Search">
 
     <Grid>
-        <ComboBox Name="SearchBox" IsTextSearchEnabled="True" IsEditable="True"
-          TextBoxBase.TextChanged="cbTest_TextChanged" Margin="200,162,200,173" />
-        
+        <StackPanel>
+            <TextBlock Text="{Binding ElementName=SearchBox, Path=SelectedItem.Desc1}" 
+                          Margin="0,19,0,0" Background="PaleGreen" TextAlignment="Center" Height="25"/>
+            <TextBlock Text="{Binding SelectedItem.Desc2, ElementName=SearchBox}" Background="SpringGreen" Height="35"/>
+            <ComboBox x:Name="SearchBox"  IsTextSearchEnabled="True" 
+                  IsEditable="True" ItemsSource="{Binding DescriptionsCollection}" 
+                      Margin="200,140,200,173" DisplayMemberPath="Name" Height="26"/>
+        </StackPanel>
+
     </Grid>
 </Page>
