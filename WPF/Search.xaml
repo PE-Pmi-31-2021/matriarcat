@@ -8,15 +8,20 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Search">
 
-    <Grid>
+    <Grid  Margin="0,45,0,0">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF406827" Offset="1"/>
+                <GradientStop Color="#FF6AD12B"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <StackPanel>
-            <TextBlock Text="{Binding ElementName=SearchBox, Path=SelectedItem.Desc1}" 
-                          Margin="0,19,0,0" Background="PaleGreen" TextAlignment="Center" Height="25"/>
-            <TextBlock Text="{Binding SelectedItem.Desc2, ElementName=SearchBox}" Background="SpringGreen" Height="35"/>
-            <ComboBox x:Name="SearchBox"  IsTextSearchEnabled="True" 
+                <TextBlock Text="{Binding ElementName=SearchBox, Path=SelectedItem.Desc1}" 
+                          Margin="0,19,0,0" TextAlignment="Center" Height="25"/>
+                <TextBlock Text="{Binding SelectedItem.Desc2, ElementName=SearchBox}" Height="35"/>
+                <ComboBox x:Name="SearchBox"  IsTextSearchEnabled="True" 
                   IsEditable="True" ItemsSource="{Binding DescriptionsCollection}" 
                       Margin="200,140,200,173" DisplayMemberPath="Name" Height="26"/>
-        </StackPanel>
-
-    </Grid>
+            </StackPanel>
+        </Grid>
 </Page>
