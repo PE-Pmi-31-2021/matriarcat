@@ -7,23 +7,27 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Label">
-    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
-        <Grid>
-            <ListView x:Name="LabelBox" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="431" Margin="0,19,0,0">
+    <Grid>
+        <ListView x:Name="LabelBox" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="445" Margin="0,45,0,0" ScrollViewer.VerticalScrollBarVisibility="Hidden" >
+                <ListView.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF406827" Offset="0"/>
+                        <GradientStop Color="#FF6AD12B" Offset="1"/>
+                    </LinearGradientBrush>
+                </ListView.Background>
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
-                        <UniformGrid Columns="5" HorizontalAlignment="Stretch"/>
+                        <UniformGrid Columns="3" HorizontalAlignment="Stretch"/>
                     </ItemsPanelTemplate>
                 </ItemsControl.ItemsPanel>
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
-                            <Image Source="{Binding ImageData}" HorizontalAlignment="Stretch" VerticalAlignment="Top" Stretch="UniformToFill" Width="50" Height="50" />
-                            <TextBlock Text="{Binding Title}" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" />
+                        <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <Image Source="{Binding ImageData}" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="UniformToFill" Width="100" Height="100" Margin="50,30,30,10"/>
+                            <TextBlock Text="{Binding Title}" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Foreground="#FFFEFCE0" Width="160" Height="100" TextWrapping="Wrap" TextAlignment="Center" FontSize="14" Margin="30,30,30,30"/>
                         </StackPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
         </Grid>
-    </ScrollViewer>
 </Page>
