@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Label">
     <Grid>
-        <ListView x:Name="LabelBox" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="445" Margin="0,45,0,0" ScrollViewer.VerticalScrollBarVisibility="Hidden" >
+        <ListView x:Name="LabelBox" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="445" Margin="0,19,0,0" ScrollViewer.VerticalScrollBarVisibility="Hidden" >
             <ListView.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF406827" Offset="1"/>
@@ -25,7 +25,7 @@
                     <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" >                     
                         <Image Source="{Binding ImageData}" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="UniformToFill" Width="100" Height="100" Margin="50,30,30,10"/>
                         <Button Content="{Binding Title}" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Foreground="#FFFEFCE0" FontSize="14" Margin="30,30,30,30"
-                                    Background="Transparent" BorderBrush="Transparent" BorderThickness="0" />
+                                    Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Click="OnClick"/>
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
