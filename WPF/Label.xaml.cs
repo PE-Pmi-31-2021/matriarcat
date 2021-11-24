@@ -81,37 +81,7 @@ namespace TESTWPF
         {
             return new BitmapImage(new Uri(filename));
         }
-        //public BitmapImage LoadImage2(byte[] imageData)
-        //{
-
-        //    if (imageData == null || imageData.Length == 0) return null;
-        //    var image = new BitmapImage();
-        //    using (var mem = new MemoryStream(imageData))
-        //    {
-        //        mem.Position = 0;
-        //        image.BeginInit();
-        //        image.CreateOptions = BitmapCreateOptions.PreservePixelFormat;
-        //        image.CacheOption = BitmapCacheOption.OnLoad;
-        //        image.UriSource = null;
-        //        image.StreamSource = mem;
-        //        image.EndInit();
-
-        //    }
-        //    image.Freeze();
-        //    return image;
-        //}
-        //public BitmapImage SetImageData(byte[] data)
-        //{
-        //    var source = new BitmapImage();
-        //    source.BeginInit();
-        //    source.StreamSource = new MemoryStream(data);
-        //    source.EndInit();
-        //    return source;
-        //    // use public setter
-        //    //ImageSource = source;
-        //}
-    }
-
+        
     public class LabelData
     {
         private string _Title;
