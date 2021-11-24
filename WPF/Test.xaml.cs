@@ -10,7 +10,7 @@ namespace RSSDraft
         public Test()
         {
             InitializeComponent();
-            this.Main.Content = new Label();
+            this.Main.Content = new Search();
         }
 
         private void Main_Navigated(object sender, System.Windows.Navigation.NavigationEventArgs e)
