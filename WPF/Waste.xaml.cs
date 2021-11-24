@@ -30,7 +30,9 @@ namespace TESTWPF
         }
         private void BtnClick(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Uri("Read.xaml", UriKind.Relative));
+            var keyword = (e.Source as Button).Content.ToString();
+            Read rd = new Read(keyword);
+            NavigationService.Navigate(rd);
         }
     }
     
